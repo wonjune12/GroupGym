@@ -33,7 +33,7 @@ class Pokemon{
 let trainer = new Trainer();
 
 // const axios = require('axios'); 
-axios.get("http://fizal.me/pokeapi/api/387.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/387/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -67,7 +67,7 @@ axios.get("http://fizal.me/pokeapi/api/387.json")
     console.log(error);
 });
 
-axios.get("http://fizal.me/pokeapi/api/390.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/390/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -99,7 +99,7 @@ axios.get("http://fizal.me/pokeapi/api/390.json")
 
 
 
-axios.get("http://fizal.me/pokeapi/api/393.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 .then(function (response){
 
     let pokeData = response.data;
