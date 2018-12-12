@@ -1,0 +1,59 @@
+body {
+  height: 1000px;
+  color : white;
+  font: 2em Russo One sans-serif;
+  background: linear-gradient(to bottom, #35b8a8, #9ec35f); 
+}
+
+#pokeImage {
+  width: 100%;
+  height: 100%; 
+
+}
+
+#pokeImg {
+  height: 600px;
+  width: 550px; }
+
+#headerImg {
+  height: 92px;
+  width: 250px; }
+
+input{
+  width : 40%;
+  text-align : center;
+  display : center;
+  justify-content: center;
+}
+
+nav{
+  opacity:0;
+}
+
+nav:hover{
+  opacity:1;
+}
+
+#pokeLogo-navBar{
+  height : 3rem;
+}
+#pokeball-icon{
+  height : 4rem;
+}
+
+.breadcrumb{
+
+  margin-bottom : 60px;
+  background-color : #35b8a8;
+}
+#pokemon11{
+  font : 'Russo One';
+}
+.media{
+  margin: 50px 50px;
+}
+.container{
+  margin-top : 50px;
+  text-align:center;
+}
+/*# sourceMappingURL=main.css.map */
