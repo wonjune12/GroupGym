@@ -77,12 +77,12 @@ nav:hover {
   max-width: 33%; }
 
 .media-img {
-  margin: 0 200px 0 200px;
+  margin: 0 200px 0 160px;
   position: relative;
   animation: slideInRight 1.5s forwards; }
 
 .media-body {
-  margin: 0 200px 0 200px;
+  margin: 0 200px 0 160px;
   position: relative;
   animation: slideInLeft 1.5s forwards; }
 
