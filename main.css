@@ -1,15 +1,26 @@
 body {
   height: 1000px;
-  color : white;
-  font: 2em Russo One sans-serif;
-  background: linear-gradient(to bottom, #35b8a8, #9ec35f); 
-}
+  color: white;
+  background: linear-gradient(to bottom, #35b8a8, #9ec35f); }
 
-#pokeImage {
-  width: 100%;
-  height: 100%; 
+.row {
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 450px; }
 
-}
+.row.slideDown {
+  position: relative;
+  animation: slideDown 1s forwards; }
+
+#page1 {
+  background: linear-gradient(to bottom, #35b8a8, #9ec35f); }
+
+#page2 {
+  background: linear-gradient(to bottom, #b42222, #eb6969); }
+
+#page3 {
+  background: linear-gradient(to bottom, #1b31ad, #627cb4); }
 
 #pokeImg {
   height: 600px;
@@ -19,41 +30,81 @@ body {
   height: 92px;
   width: 250px; }
 
-input{
-  width : 40%;
-  text-align : center;
-  display : center;
-  justify-content: center;
-}
+input {
+  width: 40%;
+  text-align: center; }
 
-nav{
-  opacity:0;
-}
+nav {
+  opacity: 0; }
 
-nav:hover{
-  opacity:1;
-}
+nav:hover {
+  opacity: 1; }
 
-#pokeLogo-navBar{
-  height : 3rem;
-}
-#pokeball-icon{
-  height : 4rem;
-}
+#pokeLogo-navBar {
+  height: 3rem; }
 
-.breadcrumb{
+#pokeball-icon {
+  height: 4rem; }
 
-  margin-bottom : 60px;
-  background-color : #35b8a8;
-}
-#pokemon11{
-  font : 'Russo One';
-}
-.media{
-  margin: 50px 50px;
-}
-.container{
-  margin-top : 50px;
-  text-align:center;
-}
+#pokeball-icon-landing {
+  height: 70%; }
+
+.breadcrumb {
+  margin-bottom: 60px;
+  background-color: #35b8a8; }
+
+#page2 .breadcrumb {
+  background: #b42222; }
+
+#page3 .breadcrumb {
+  background: #1b31ad; }
+
+.media {
+  margin: 50px 50px; }
+
+.media-body {
+  line-height: 1000%;
+  font: 2em "Russo One";
+  margin: 0 200px 0 200px; }
+
+.container {
+  font: 2em "Russo One";
+  margin-top: 50px;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
+.col-md-3 {
+  max-width: 33%; }
+
+.media-img {
+  margin: 0 200px 0 200px;
+  position: relative;
+  animation: slideInRight 1.5s forwards; }
+
+.media-body {
+  margin: 0 200px 0 200px;
+  position: relative;
+  animation: slideInLeft 1.5s forwards; }
+
+#pokeball-icon-landing:hover {
+  opacity: 0.4; }
+
+@keyframes slideInLeft {
+  from {
+    left: -3000px; }
+  to {
+    left: 0; } }
+@keyframes slideInRight {
+  from {
+    right: -3000px; }
+  to {
+    right: 0; } }
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    top: 1110px; }
+  to {
+    opacity: 1;
+    top: 0px; } }
+
 /*# sourceMappingURL=main.css.map */

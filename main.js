@@ -1,16 +1,6 @@
 "use strict";
 
 
-// let hoverEvent = document.querySelectorAll("#pokeball-icon.jpg");
-// for (let i =0; i < hoverEvent.length; i++){
-//     hoverEvent[i].addEventListener("mouseover",(event)=>{
-//         // hoverEvent.classList.toggle("icon.hover");
-//         hoverEvent.src = "Piplup.png";
-//     })
-// }
-
-
-// const axios = require("axios");
 class Trainer{
     constructor(name,pokemonArr){
         this.name = name;
@@ -30,7 +20,9 @@ class Pokemon{
     }
 }
 
-let trainer = new Trainer();
+function capitalizeFirstLetter(str){
+    return str[0].toUpperCase() + str.slice(1);
+}
 
 // const axios = require('axios'); 
 axios.get("https://pokeapi.co/api/v2/pokemon/387/")
@@ -41,9 +33,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     for (let i = 0; i < response.data.abilities.length; i++){
         arrAbs.push(response.data.abilities[i].ability.name)
     }
-
-
-
     let pokemon1 = new Pokemon(
     pokeData.name,
     pokeData["stats"][4].base_stat,
@@ -52,13 +41,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     pokeData.types[0].type.name
     )
     let pokemon11 = document.getElementById("pokemon1");
-    pokemon11.innerText = ` Name : ${pokemon1.name}
-                            Attack : ${pokemon1.attackPower}
-                            HP  : ${pokemon1.healthPoint}
-                            Abilities ${pokemon1.abilities}`;
-
-    trainer.add(pokemon1);
-
+    pokemon11.innerText = ` Name : ${capitalizeFirstLetter(pokemon1.name)}
+                            Attack : ${pokemon1.attackPower} 
+                            HP  : ${pokemon1.healthPoint} 
+                            Abilities : ${pokemon1.abilities}`;
 })
 .catch(function(error){
     if(error.response){
@@ -72,8 +58,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
 
     let pokeData = response.data;
     var arrAbs = [];    
-    for (let i = 0; i < response.data.abilities.length; i++){
-        arrAbs.push(response.data.abilities[i].ability.name)
+    for (let i = 0; i < pokeData.abilities.length; i++){
+        arrAbs.push( pokeData.abilities[i].ability.name)
     }
 
     let pokemon2 = new Pokemon(
@@ -84,13 +70,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
     pokeData.types[0].type.name
     )
     let pokemon22 = document.getElementById("pokemon2");
-    pokemon22.innerText = ` Name : ${pokemon2.name}
+    pokemon22.innerText = ` Name : ${capitalizeFirstLetter(pokemon2.name)}
                             Attack : ${pokemon2.attackPower}
                             HP  : ${pokemon2.healthPoint}
-                            Abilities ${pokemon2.abilities}`;
-    
-
-
+                            Abilities : ${pokemon2.abilities}`;
 })
 .catch(function(error){
 
@@ -108,8 +91,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
         arrAbs.push(response.data.abilities[i].ability.name)
     }
 
-
-
     let pokemon3 = new Pokemon(
     pokeData.name,
     pokeData["stats"][4].base_stat,
@@ -118,11 +99,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     pokeData.types[0].type.name
     )
     let pokemon33 = document.getElementById("pokemon3");
-    pokemon33.innerText = ` Name : ${pokemon3.name}
+    pokemon33.innerText = ` Name : ${capitalizeFirstLetter(pokemon3.name)}
                             Attack : ${pokemon3.attackPower}
                             HP  : ${pokemon3.healthPoint}
-                            Abilities ${pokemon3.abilities}`;
-
+                            Abilities : ${pokemon3.abilities}`;
 
 })
 .catch(function(error){
@@ -132,10 +112,3 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     console.log(error);
 });
 
-// let trainer = new Trainer();
-// trainer.add(pokemon1);
-// trainer.add(pokemon2);
-// trainer.add(pokemon3);
-// console.log(trainer);
-// trainer.add(pokemon);
-// divs.innerHTML = trainer;

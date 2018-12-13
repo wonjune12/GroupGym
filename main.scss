@@ -1,0 +1,150 @@
+$std-margin : 50px;
+$pokeApiFont : 2em 'Russo One';
+$fireTypeBackground :  linear-gradient(to bottom, #b42222, #eb6969);
+$waterTypeBackground : linear-gradient(to bottom, #1b31ad, #627cb4);
+$grassTypeBackground : linear-gradient(to bottom, #35b8a8, #9ec35f);
+$media-margin : 0 200px 0 200px;
+
+body {
+    height: 1000px;
+    color : white;
+
+    background: linear-gradient(to bottom, #35b8a8, #9ec35f);   
+}
+.row{
+    opacity:0;
+    display:flex;
+    justify-content: space-around;
+    height: 450px;
+
+}
+.row.slideDown{
+    position : relative;
+    animation : slideDown 1s forwards;
+}
+#page1{
+    background: $grassTypeBackground;
+
+}
+
+#page2{
+    background: $fireTypeBackground; 
+}
+
+#page3{
+    background: $waterTypeBackground;
+}
+
+//   #pokeImage {
+//     width: 100%;
+//     height: 100%; 
+  
+//   }
+  
+  #pokeImg {
+    height: 600px;
+    width: 550px; }
+  
+  #headerImg {
+    height: 92px;
+    width: 250px; }
+  
+  input{
+    width : 40%;
+    text-align : center;
+  }
+  
+  nav{
+    opacity:0;
+  }
+  
+  nav:hover{
+    opacity:1;
+  }
+  
+  #pokeLogo-navBar{
+    height : 3rem;
+  }
+  #pokeball-icon{
+    height : 4rem;
+  }
+  #pokeball-icon-landing{
+      height : 70%;
+  }
+  .breadcrumb{
+    margin-bottom : 60px;
+    background-color : #35b8a8;
+  }
+#page2 .breadcrumb{
+    background : #b42222;
+}
+#page3 .breadcrumb{
+    background : #1b31ad;
+}
+
+  .media{
+    margin: $std-margin $std-margin;
+  }
+//   .media-img{
+//     margin : 0 200px 0 200px;
+//   }
+  .media-body{
+      line-height: 1000%;
+    font: $pokeApiFont;
+      margin : 0 200px 0 200px;
+  }
+  .container{
+      font:$pokeApiFont;
+    margin-top : $std-margin;
+    text-align:center;
+  }
+  /*# sourceMappingURL=main.css.map */
+  
+.col-md-3{
+    max-width: 33%;
+
+}
+
+.media-img{
+    margin : $media-margin;
+    position:relative;
+    animation : slideInRight 1.5s forwards;
+}
+.media-body{
+    margin : $media-margin;
+    position:relative;
+    animation : slideInLeft 1.5s forwards;
+}
+
+
+#pokeball-icon-landing:hover{
+    opacity : 0.4;
+}
+  @keyframes slideInLeft{
+      from{
+          left: -3000px;
+      }
+      to{
+          left:0;
+      }
+  }
+
+  @keyframes slideInRight{
+      from{
+          right : -3000px;
+      }
+      to{
+          right : 0;
+      }
+  }
+  
+  @keyframes slideDown{
+      from{
+          opacity:0;
+          top: 1110px;
+      }
+      to{
+          opacity:1;
+          top:0px;
+      }
+  }
