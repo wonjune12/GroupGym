@@ -63,54 +63,60 @@ $navBarSize : 4rem;
     @extend %waterType;
 }
 
-  #pokeImg {
+#pokeImg {
     height: 600px;
-    width: 550px; }
+    width: 550px; 
+}
   
-  #headerImg {
+#headerImg {
     height: 92px;
-    width: 250px; }
+    width: 250px; 
+}
   
-  input{
+input{
     width : 40%;
     text-align : center;
-  }
+}
   
-  nav{
+nav{
     opacity:0;
-  }
+}
   
-  nav:hover{
+nav:hover{
     opacity:1;
-  }
+}
   
-  #pokeLogo-navBar{
+#pokeLogo-navBar{
     height :$navBarSize;
-  }
-  #pokeball-icon{
+}
+
+#pokeball-icon{
     height : $navBarSize;
-  }
-  #pokeball-icon-landing{
+}
+
+#pokeball-icon-landing{
       height : 70%;
-  }
-  .breadcrumb{
+}
+
+.breadcrumb{
     margin-bottom : $std-margin;
     background-color : #35b8a8;
-  }
+}
 
-  .media{
+.media{
     margin: $std-margin;
-  }
+}
 
-  .media-body{
+.media-body{
     font: $pokeApiFont;
     margin : 0 $std-margin;
-  }
-  .container{
+}
+
+.container{
     font:$pokeApiFont;
     margin-top : $std-margin;
     text-align:center;
-  }
+}
   /*# sourceMappingURL=main.css.map */
   
 .col-md-3{
@@ -131,29 +137,32 @@ $navBarSize : 4rem;
 #pokeball-icon-landing:hover{
     opacity : 0.4;
 }
-  @keyframes slideInLeft{
+  
+@keyframes slideInLeft{
+    from{
+        left: -1800px;
+    }
+    to{
+        left:0;
+    }
+}
+  
+@keyframes slideInRight{
       from{
-          left: -1800px;
-      }
+        right : -1800px;
+    }
       to{
-          left:0;
-      }
-  }
-  @keyframes slideInRight{
-      from{
-          right : -1800px;
-      }
-      to{
-          right : 0;
-      }
-  }
-  @keyframes slideDown{
-      from{
-          opacity:0;
-          top: 1110px;
-      }
-      to{
-          opacity:1;
-          top:0px;
-      }
-  }
+        right : 0;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        top: 1110px;
+    }
+    to{
+        opacity:1;
+        top:0px;
+    }
+}
