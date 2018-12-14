@@ -42,7 +42,7 @@ nav:hover {
   opacity: 1; }
 
 #pokeLogo-navBar {
-  height: 3rem; }
+  height: 4rem; }
 
 #pokeball-icon {
   height: 4rem; }
@@ -61,12 +61,12 @@ nav:hover {
   background: #1b31ad; }
 
 .media {
-  margin: 50px 50px; }
+  margin: 0 170px 0 170px; }
 
 .media-body {
   line-height: 1000%;
   font: 2em "Russo One";
-  margin: 0 200px 0 200px; }
+  margin: 0 50px; }
 
 .container {
   font: 2em "Russo One";
@@ -78,12 +78,12 @@ nav:hover {
   max-width: 33%; }
 
 .media-img {
-  margin: 0 200px 0 160px;
+  margin: 0 170px 0 170px;
   position: relative;
   animation: slideInRight 1.5s forwards; }
 
 .media-body {
-  margin: 0 200px 0 160px;
+  margin: 0 170px 0 170px;
   position: relative;
   animation: slideInLeft 1.5s forwards; }
 

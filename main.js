@@ -1,15 +1,15 @@
 "use strict";
 
 
-class Trainer{
-    constructor(name,pokemonArr){
-        this.name = name;
-        this.pokemonArr = [];
-    }
-    add(pokemon){
-        this.pokemonArr.push(pokemon);
-    }
-}
+// class Trainer{
+//     constructor(name,pokemonArr){
+//         this.name = name;
+//         this.pokemonArr = [];
+//     }
+//     add(pokemon){
+//         this.pokemonArr.push(pokemon);
+//     }
+// }
 class Pokemon{
     constructor(name,attackPower,healthPoint,abilities,types){
         this.name = name;
@@ -19,6 +19,11 @@ class Pokemon{
         this.types = types;
     }
 }
+
+
+let tName = localStorage.getItem("key");
+
+
 
 function capitalizeFirstLetter(str){
     return str[0].toUpperCase() + str.slice(1);
@@ -41,7 +46,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     pokeData.types[0].type.name
     )
     let pokemon11 = document.getElementById("pokemon1");
-    pokemon11.innerText = ` Name : ${capitalizeFirstLetter(pokemon1.name)}
+    pokemon11.innerText = ` ${tName}'s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon1.name)}
                             Attack : ${pokemon1.attackPower} 
                             HP  : ${pokemon1.healthPoint} 
                             Abilities : ${pokemon1.abilities}`;
@@ -70,7 +76,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
     pokeData.types[0].type.name
     )
     let pokemon22 = document.getElementById("pokemon2");
-    pokemon22.innerText = ` Name : ${capitalizeFirstLetter(pokemon2.name)}
+    pokemon22.innerText = ` ${tName}'s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon2.name)}
                             Attack : ${pokemon2.attackPower}
                             HP  : ${pokemon2.healthPoint}
                             Abilities : ${pokemon2.abilities}`;
@@ -99,7 +106,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     pokeData.types[0].type.name
     )
     let pokemon33 = document.getElementById("pokemon3");
-    pokemon33.innerText = ` Name : ${capitalizeFirstLetter(pokemon3.name)}
+    pokemon33.innerText = ` ${tName}s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon3.name)}
                             Attack : ${pokemon3.attackPower}
                             HP  : ${pokemon3.healthPoint}
                             Abilities : ${pokemon3.abilities}`;
