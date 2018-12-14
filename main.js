@@ -1,26 +1,20 @@
 "use strict";
 
-
 class Pokemon{
-    constructor(name,attackPower,healthPoint,abilities,types){
+    constructor(name,attackPower,healthPoint,abilities){
         this.name = name;
         this.attackPower = attackPower;
         this.healthPoint = healthPoint;
         this.abilities = abilities;
-        this.types = types;
     }
 }
 
-
 let tName = localStorage.getItem("key");
-
-
 
 function capitalizeFirstLetter(str){
     return str[0].toUpperCase() + str.slice(1);
 }
 
-// const axios = require('axios'); 
 axios.get("https://pokeapi.co/api/v2/pokemon/387/")
 .then(function (response){
 
@@ -33,8 +27,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
-    arrAbs,
-    pokeData.types[0].type.name
+    arrAbs
     )
     let pokemon11 = document.getElementById("pokemon1");
     pokemon11.innerText = ` ${tName}'s Pokemon
@@ -44,9 +37,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
                             Abilities : ${pokemon1.abilities}`;
 })
 .catch(function(error){
-    if(error.response){
-        console.log(error);
-    }
     console.log(error);
 });
 
@@ -63,8 +53,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
-    arrAbs,
-    pokeData.types[0].type.name
+    arrAbs
     )
     let pokemon22 = document.getElementById("pokemon2");
     pokemon22.innerText = ` ${tName}'s Pokemon
@@ -74,11 +63,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
                             Abilities : ${pokemon2.abilities}`;
 })
 .catch(function(error){
-
     console.log(error);
 })
-
-
 
 axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 .then(function (response){
@@ -93,8 +79,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
-    arrAbs,
-    pokeData.types[0].type.name
+    arrAbs
     )
     let pokemon33 = document.getElementById("pokemon3");
     pokemon33.innerText = ` ${tName}'s Pokemon
@@ -105,9 +90,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
 })
 .catch(function(error){
-    if(error.response){
-        console.log(error);
-    }
     console.log(error);
 });
 
