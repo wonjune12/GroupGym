@@ -6,7 +6,6 @@ $grassTypeBackground : linear-gradient(to bottom, #35b8a8, #9ec35f);
 $media-margin : 0 170px 0 170px;
 $navBarSize : 4rem;
 
-
 body {
     height: 1000px;
     color : white;
@@ -83,7 +82,6 @@ body {
   }
 
   .media-body{
-      line-height: 1000%;
     font: $pokeApiFont;
       margin : 0 $std-margin;
   }
