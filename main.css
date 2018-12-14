@@ -1,7 +1,21 @@
-body {
-  height: 1000px;
+#page3, #page2, #indexPage, #page1 {
   color: white;
+  height: 1000px; }
+
+#page3 {
+  background: linear-gradient(to bottom, #1b31ad, #627cb4); }
+  #page3 .breadcrumb {
+    background: #1b31ad; }
+
+#page2 {
+  background: linear-gradient(to bottom, #b42222, #eb6969); }
+  #page2 .breadcrumb {
+    background: #b42222; }
+
+#indexPage, #page1 {
   background: linear-gradient(to bottom, #35b8a8, #9ec35f); }
+  #indexPage .breadcrumb, #page1 .breadcrumb {
+    background-color: #35b8a8; }
 
 .row {
   margin-top: 100px;
@@ -13,15 +27,6 @@ body {
 .row.slideDown {
   position: relative;
   animation: slideDown 1s forwards; }
-
-#page1 {
-  background: linear-gradient(to bottom, #35b8a8, #9ec35f); }
-
-#page2 {
-  background: linear-gradient(to bottom, #b42222, #eb6969); }
-
-#page3 {
-  background: linear-gradient(to bottom, #1b31ad, #627cb4); }
 
 #pokeImg {
   height: 600px;
@@ -51,20 +56,13 @@ nav:hover {
   height: 70%; }
 
 .breadcrumb {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   background-color: #35b8a8; }
 
-#page2 .breadcrumb {
-  background: #b42222; }
-
-#page3 .breadcrumb {
-  background: #1b31ad; }
-
 .media {
-  margin: 0 170px 0 170px; }
+  margin: 50px; }
 
 .media-body {
-  line-height: 1000%;
   font: 2em "Russo One";
   margin: 0 50px; }
 
@@ -92,12 +90,12 @@ nav:hover {
 
 @keyframes slideInLeft {
   from {
-    left: -3000px; }
+    left: -1800px; }
   to {
     left: 0; } }
 @keyframes slideInRight {
   from {
-    right: -3000px; }
+    right: -1800px; }
   to {
     right: 0; } }
 @keyframes slideDown {
