@@ -1,15 +1,6 @@
 "use strict";
 
 
-// class Trainer{
-//     constructor(name,pokemonArr){
-//         this.name = name;
-//         this.pokemonArr = [];
-//     }
-//     add(pokemon){
-//         this.pokemonArr.push(pokemon);
-//     }
-// }
 class Pokemon{
     constructor(name,attackPower,healthPoint,abilities,types){
         this.name = name;
@@ -106,7 +97,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     pokeData.types[0].type.name
     )
     let pokemon33 = document.getElementById("pokemon3");
-    pokemon33.innerText = ` ${tName}s Pokemon
+    pokemon33.innerText = ` ${tName}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon3.name)}
                             Attack : ${pokemon3.attackPower}
                             HP  : ${pokemon3.healthPoint}
