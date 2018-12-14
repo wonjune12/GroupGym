@@ -5,30 +5,32 @@ $waterTypeBackground : linear-gradient(to bottom, #1b31ad, #627cb4);
 $grassTypeBackground : linear-gradient(to bottom, #35b8a8, #9ec35f);
 $media-margin : 0 170px 0 170px;
 $navBarSize : 4rem;
-$bodyHeight : 1000px;
+
+
+%bodyDefault{
+    color:white;
+    height : 1000px;
+}
 
 %waterType {
+    @extend %bodyDefault;
     background: $waterTypeBackground;
-    color : white;
-    height : $bodyHeight;
     .breadcrumb{
         background : #1b31ad;
     }
 }
 
 %fireType{
+    @extend %bodyDefault;
     background: $fireTypeBackground;
-    color : white;
-    height : $bodyHeight;
     .breadcrumb{
         background : #b42222;
     }
 }
 
 %grassType{
+    @extend %bodyDefault;
     background: $grassTypeBackground;
-    color:white;
-    height : $bodyHeight;
     .breadcrumb{
         background-color : #35b8a8;
     }
@@ -102,7 +104,7 @@ $bodyHeight : 1000px;
 
   .media-body{
     font: $pokeApiFont;
-      margin : 0 $std-margin;
+    margin : 0 $std-margin;
   }
   .container{
     font:$pokeApiFont;
@@ -131,7 +133,7 @@ $bodyHeight : 1000px;
 }
   @keyframes slideInLeft{
       from{
-          left: -3000px;
+          left: -1800px;
       }
       to{
           left:0;
@@ -139,7 +141,7 @@ $bodyHeight : 1000px;
   }
   @keyframes slideInRight{
       from{
-          right : -3000px;
+          right : -1800px;
       }
       to{
           right : 0;
