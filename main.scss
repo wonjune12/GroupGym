@@ -74,7 +74,7 @@ $navBarSize : 4rem;
     @extend %waterType;
 }
 
-#page4 #page5 #page6 {
+#page4, #page5, #page6 {
     @extend %rockType;
 }
 
