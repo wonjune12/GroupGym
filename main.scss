@@ -3,6 +3,8 @@ $pokeApiFont : 2em 'Russo One';
 $fireTypeBackground :  linear-gradient(to bottom, #b42222, #eb6969);
 $waterTypeBackground : linear-gradient(to bottom, #1b31ad, #627cb4);
 $grassTypeBackground : linear-gradient(to bottom, #35b8a8, #9ec35f);
+$rockTypeBackground : linear-gradient(to bottom, #b8b52a, #a09035)
+
 $media-margin : 0 170px 0 170px;
 $navBarSize : 4rem;
 
@@ -33,6 +35,14 @@ $navBarSize : 4rem;
     background: $grassTypeBackground;
     .breadcrumb{
         background-color : #35b8a8;
+    }
+}
+
+%rockType{
+    @extend %bodyDefault;
+    background: $rockTypeBackground;
+    .breadcrumb{
+        background-color : #eb6969;
     }
 }
 
