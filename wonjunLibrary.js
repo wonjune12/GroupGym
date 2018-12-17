@@ -9,7 +9,7 @@ class Pokemon{
     }
 }
 
-let tName = localStorage.getItem("key");
+let t1Name = localStorage.getItem("first");
 
 function capitalizeFirstLetter(str){
     return str[0].toUpperCase() + str.slice(1);
@@ -30,7 +30,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     arrAbs
     )
     let pokemon11 = document.getElementById("pokemon1");
-    pokemon11.innerText = ` ${tName}'s Pokemon
+    pokemon11.innerText = ` ${t1Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon1.name)}
                             Attack : ${pokemon1.attackPower} 
                             HP  : ${pokemon1.healthPoint} 
@@ -56,7 +56,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
     arrAbs
     )
     let pokemon22 = document.getElementById("pokemon2");
-    pokemon22.innerText = ` ${tName}'s Pokemon
+    pokemon22.innerText = ` ${t1Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon2.name)}
                             Attack : ${pokemon2.attackPower}
                             HP  : ${pokemon2.healthPoint}
@@ -82,7 +82,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     arrAbs
     )
     let pokemon33 = document.getElementById("pokemon3");
-    pokemon33.innerText = ` ${tName}'s Pokemon
+    pokemon33.innerText = ` ${t1Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon3.name)}
                             Attack : ${pokemon3.attackPower}
                             HP  : ${pokemon3.healthPoint}

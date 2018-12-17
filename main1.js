@@ -3,7 +3,8 @@
 var clickEvent = document.querySelector("button");
 var showRow = document.querySelector(".row");
 clickEvent.addEventListener("click",(event)=>{
-    localStorage.setItem("key",document.getElementById("trainer-name").value); 
+    localStorage.setItem("first",document.getElementById("trainer-name1").value); 
+    localStorage.setItem("second",document.getElementById("trainer-name2").value); 
     showRow.classList.add("slideDown");
 })
 
