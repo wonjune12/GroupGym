@@ -15,7 +15,7 @@ function capitalizeFirstLetter(str){
     return str[0].toUpperCase() + str.slice(1);
 }
 
-axios.get("https://pokeapi.co/api/v2/pokemon/387/")
+axios.get("https://pokeapi.co/api/v2/pokemon/567/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -23,12 +23,20 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     for (let i = 0; i < response.data.abilities.length; i++){
         arrAbs.push(response.data.abilities[i].ability.name)
     }
-    let pokemon1 = new Pokemon(
+    let pokemon4 = new Pokemon(
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
     arrAbs
     )
+
+    let pokemon44 = document.getElementById("pokemon1");
+    pokemon44.innerText = ` ${tName}'s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon4.name)}
+                            Attack : ${pokemon4.attackPower} 
+                            HP  : ${pokemon4.healthPoint} 
+                            Abilities : ${pokemon4.abilities}`;
+
     let pokemon11 = document.getElementById("pokemon1");
     pokemon11.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon1.name)}
@@ -40,7 +48,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/387/")
     console.log(error);
 });
 
-axios.get("https://pokeapi.co/api/v2/pokemon/390/")
+axios.get("https://pokeapi.co/api/v2/pokemon/348/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -49,24 +57,32 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
         arrAbs.push( pokeData.abilities[i].ability.name)
     }
 
-    let pokemon2 = new Pokemon(
+    let pokemon5 = new Pokemon(
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
     arrAbs
     )
+    let pokemon55 = document.getElementById("pokemon2");
+    pokemon55.innerText = ` ${tName}'s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon5.name)}
+                            Attack : ${pokemon5.attackPower}
+                            HP  : ${pokemon5.healthPoint}
+                            Abilities : ${pokemon5.abilities}`;
+
     let pokemon22 = document.getElementById("pokemon2");
     pokemon22.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon2.name)}
                             Attack : ${pokemon2.attackPower}
                             HP  : ${pokemon2.healthPoint}
                             Abilities : ${pokemon2.abilities}`;
+
 })
 .catch(function(error){
     console.log(error);
 })
 
-axios.get("https://pokeapi.co/api/v2/pokemon/393/")
+axios.get("https://pokeapi.co/api/v2/pokemon/409/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -75,18 +91,27 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
         arrAbs.push(response.data.abilities[i].ability.name)
     }
 
-    let pokemon3 = new Pokemon(
+    let pokemon6 = new Pokemon(
     pokeData.name,
     pokeData["stats"][4].base_stat,
     pokeData["stats"][5].base_stat,
     arrAbs
     )
+
+    let pokemon66 = document.getElementById("pokemon3");
+    pokemon66.innerText = ` ${tName}'s Pokemon
+                            Name : ${capitalizeFirstLetter(pokemon6.name)}
+                            Attack : ${pokemon6.attackPower}
+                            HP  : ${pokemon6.healthPoint}
+                            Abilities : ${pokemon6.abilities}`;
+
     let pokemon33 = document.getElementById("pokemon3");
     pokemon33.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon3.name)}
                             Attack : ${pokemon3.attackPower}
                             HP  : ${pokemon3.healthPoint}
                             Abilities : ${pokemon3.abilities}`;
+
 
 })
 .catch(function(error){
