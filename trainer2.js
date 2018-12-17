@@ -30,7 +30,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/567/")
     arrAbs
     )
 
-    let pokemon44 = document.getElementById("pokemon1");
+    let pokemon44 = document.getElementById("pokemon4");
     pokemon44.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon4.name)}
                             Attack : ${pokemon4.attackPower} 
@@ -58,7 +58,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/348/")
     pokeData["stats"][5].base_stat,
     arrAbs
     )
-    let pokemon55 = document.getElementById("pokemon2");
+    let pokemon55 = document.getElementById("pokemon5");
     pokemon55.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon5.name)}
                             Attack : ${pokemon5.attackPower}
@@ -88,7 +88,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/409/")
     arrAbs
     )
 
-    let pokemon66 = document.getElementById("pokemon3");
+    let pokemon66 = document.getElementById("pokemon6");
     pokemon66.innerText = ` ${t2Name}'s Pokemon
                             Name : ${capitalizeFirstLetter(pokemon6.name)}
                             Attack : ${pokemon6.attackPower}
