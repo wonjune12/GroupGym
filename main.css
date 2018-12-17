@@ -1,6 +1,6 @@
-#page3, #page2, #indexPage, #page1, #page4, #page5, #page6 {
+#page3, #page2, #page1, #page4, #page5, #page6 {
   color: white;
-  height: 968px; }
+  height: 956px; }
 
 #page3 {
   background: linear-gradient(to bottom, #1b31ad, #627cb4); }
@@ -12,15 +12,19 @@
   #page2 .breadcrumb {
     background: #b42222; }
 
-#indexPage, #page1 {
+#page1 {
   background: linear-gradient(to bottom, #35b8a8, #9ec35f); }
-  #indexPage .breadcrumb, #page1 .breadcrumb {
+  #page1 .breadcrumb {
     background-color: #35b8a8; }
 
 #page4, #page5, #page6 {
   background: linear-gradient(to bottom, #b8b52a, #a09035); }
   #page4 .breadcrumb, #page5 .breadcrumb, #page6 .breadcrumb {
     background-color: #b8b52a; }
+
+#indexPage {
+  background-image: url("./Images/gym-bg-img.png");
+  background-repeat: no-repeat; }
 
 .row {
   margin-top: 100px;
@@ -62,7 +66,7 @@ nav:hover {
 
 .breadcrumb {
   margin-bottom: 50px;
-  background-color: #35b8a8; }
+  opacity: 0.8; }
 
 .media {
   margin: 50px; }
