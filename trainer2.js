@@ -31,16 +31,16 @@ axios.get("https://pokeapi.co/api/v2/pokemon/567/")
     )
     let pokemon44 = document.getElementById("pokemon1");
     pokemon44.innerText = ` ${tName}'s Pokemon
-                            Name : ${capitalizeFirstLetter(pokemon1.name)}
-                            Attack : ${pokemon1.attackPower} 
-                            HP  : ${pokemon1.healthPoint} 
-                            Abilities : ${pokemon1.abilities}`;
+                            Name : ${capitalizeFirstLetter(pokemon4.name)}
+                            Attack : ${pokemon4.attackPower} 
+                            HP  : ${pokemon4.healthPoint} 
+                            Abilities : ${pokemon4.abilities}`;
 })
 .catch(function(error){
     console.log(error);
 });
 
-axios.get("https://pokeapi.co/api/v2/pokemon/390/")
+axios.get("https://pokeapi.co/api/v2/pokemon/348/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -57,16 +57,16 @@ axios.get("https://pokeapi.co/api/v2/pokemon/390/")
     )
     let pokemon55 = document.getElementById("pokemon2");
     pokemon55.innerText = ` ${tName}'s Pokemon
-                            Name : ${capitalizeFirstLetter(pokemon2.name)}
-                            Attack : ${pokemon2.attackPower}
-                            HP  : ${pokemon2.healthPoint}
-                            Abilities : ${pokemon2.abilities}`;
+                            Name : ${capitalizeFirstLetter(pokemon5.name)}
+                            Attack : ${pokemon5.attackPower}
+                            HP  : ${pokemon5.healthPoint}
+                            Abilities : ${pokemon5.abilities}`;
 })
 .catch(function(error){
     console.log(error);
 })
 
-axios.get("https://pokeapi.co/api/v2/pokemon/393/")
+axios.get("https://pokeapi.co/api/v2/pokemon/409/")
 .then(function (response){
 
     let pokeData = response.data;
@@ -83,10 +83,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     )
     let pokemon66 = document.getElementById("pokemon3");
     pokemon66.innerText = ` ${tName}'s Pokemon
-                            Name : ${capitalizeFirstLetter(pokemon3.name)}
-                            Attack : ${pokemon3.attackPower}
-                            HP  : ${pokemon3.healthPoint}
-                            Abilities : ${pokemon3.abilities}`;
+                            Name : ${capitalizeFirstLetter(pokemon6.name)}
+                            Attack : ${pokemon6.attackPower}
+                            HP  : ${pokemon6.healthPoint}
+                            Abilities : ${pokemon6.abilities}`;
 
 })
 .catch(function(error){
