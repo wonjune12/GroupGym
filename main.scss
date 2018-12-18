@@ -47,8 +47,6 @@ $navBarSize : 4rem;
     }
 }
 
-
-
 #indexPage {
 
     background-image : url("./Images/gym-bg-img.png");
@@ -99,11 +97,23 @@ input{
     text-align : center;
 }
   
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
 nav{
     opacity:0;
 }
   
-nav:hover{
+nav:hover {
     opacity:1;
 }
   
@@ -113,6 +123,7 @@ nav:hover{
 
 #pokeball-icon{
     height : $navBarSize;
+    align-items: baseline;
 }
 
 #pokeball-icon-landing{
