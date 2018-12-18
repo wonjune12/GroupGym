@@ -1,13 +1,5 @@
 "use strict";
-
-class Pokemon{
-    constructor(name,attackPower,healthPoint,abilities){
-        this.name = name;
-        this.attackPower = attackPower;
-        this.healthPoint = healthPoint;
-        this.abilities = abilities;
-    }
-}
+// moved class Pokemon to main2 js
 
 let t2Name = localStorage.getItem("second");
 
