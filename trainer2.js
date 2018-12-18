@@ -1,11 +1,7 @@
 "use strict";
 // moved class Pokemon to main2 js
 
-let t2Name = localStorage.getItem("second");
 
-function capitalizeFirstLetter(str){
-    return str[0].toUpperCase() + str.slice(1);
-}
 
 axios.get("https://pokeapi.co/api/v2/pokemon/567/")
 .then(function (response){

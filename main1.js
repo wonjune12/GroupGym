@@ -10,6 +10,15 @@ class Pokemon{
     }
 }
 
+// moved from wonjunLibrary js
+let t1Name = localStorage.getItem("first");
+// moved from trainer2 js
+let t2Name = localStorage.getItem("second");
+
+function capitalizeFirstLetter(str){
+    return str[0].toUpperCase() + str.slice(1);
+}
+
 var clickEvent = document.querySelector("button");
 var showRow = document.querySelector(".row");
 var randomPage = document.getElementById("pokemonPage");

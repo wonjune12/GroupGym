@@ -1,19 +1,6 @@
 "use strict";
 
-class Pokemon{
-    constructor(name,attackPower,healthPoint,abilities){
-        this.name = name;
-        this.attackPower = attackPower;
-        this.healthPoint = healthPoint;
-        this.abilities = abilities;
-    }
-}
 
-let t1Name = localStorage.getItem("first");
-
-function capitalizeFirstLetter(str){
-    return str[0].toUpperCase() + str.slice(1);
-}
 
 axios.get("https://pokeapi.co/api/v2/pokemon/387/")
 .then(function (response){
