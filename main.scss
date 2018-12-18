@@ -12,7 +12,7 @@ $navBarSize : 4rem;
 
 %bodyDefault{
     color:white;
-    height : 968px;
+    height : 956px;
 }
 
 %waterType {
@@ -48,7 +48,9 @@ $navBarSize : 4rem;
 }
 
 #indexPage {
-    @extend %grassType;
+
+    background-image : url("./Images/gym-bg-img.png");
+    background-repeat: no-repeat;
 }
 .row{
     margin-top : 100px;
@@ -115,9 +117,8 @@ nav:hover{
 
 .breadcrumb{
     margin-bottom : $std-margin;
-    background-color : #35b8a8;
+    opacity:0.8;
 }
-
 .media{
     margin: $std-margin;
 }
