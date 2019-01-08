@@ -4,4 +4,4 @@ First group project.
 
 
 ## Authors and Acknowledgement
-[JanelleEricksonGoettl](https://github.com/JanelleEricksonGoettl/)
+[Janelle Erickson Goettl](https://github.com/JanelleEricksonGoettl/)
