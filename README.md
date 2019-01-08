@@ -3,5 +3,5 @@
 First group project.
 
 
-##Contributor
+## Contributor
 [JanelleEricksonGoettl](https://github.com/JanelleEricksonGoettl/)
